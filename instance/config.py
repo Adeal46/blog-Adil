@@ -1,6 +1,6 @@
 SECRET_KEY="flasksecret"
 
-MAIL_USERNAME="donatello54611@gmail.com"
-MAIL_PASSWORD="halowars5611"
+MAIL_USERNAME="adililema3@gmail.com"
+MAIL_PASSWORD="orientally"
 
-DATABASE_URL='postgresql+psycopg2://donaldkiplagat:halowars54611@localhost/blog'
+DATABASE_URL='postgresql+psycopg2://adililema3:orientally@localhost/blog'
