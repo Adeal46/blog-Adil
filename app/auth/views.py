@@ -17,8 +17,7 @@ def login():
 
         flash('Invalid Username or Password')
 
-    title ="Pitch Login"
-    return render_template('auth/login.html',login_form=login_form,title=title)
+    return render_template('auth/login.html',login_form=login_form)
 
 @auth.route('/logout')
 @login_required
@@ -30,7 +29,7 @@ def logout():
 def register():
     form = RegistrationForm()
     if form.validate_on_submit():
-        user = User(email = form.email.data, username = form.username.data,password = form.password.data,role_id=2)
+        user = User(email = form.email.data, username = form.username.data,password = form.password.data)
         db.session.add(user)
         db.session.commit()
 
